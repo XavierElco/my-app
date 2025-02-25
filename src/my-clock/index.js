@@ -16,6 +16,7 @@ function MyClock (props) {
         <div className="App">
             <h1>React Clock</h1>
             <h2>{time}</h2>
+            
         </div>
     )
 }
