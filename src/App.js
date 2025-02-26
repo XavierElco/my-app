@@ -4,6 +4,7 @@ import PostList from './components/post-list';
 import WritePost from './components/write-post';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.scss';
+import PostDetail from './components/post-detail';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path='/' element={<PostList></PostList>}></Route>
             <Route path='/post-list' element={<PostList></PostList>}></Route>
             <Route path='/write-post' element={<WritePost></WritePost>}></Route>
+            <Route path='/post-detail/:id' element={<PostDetail></PostDetail>}></Route>
           </Routes>
         </div>
         <Footer></Footer>
