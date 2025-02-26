@@ -1,0 +1,13 @@
+.post-list-container{
+    justify-content: space-between;
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+
+    .post-item {
+        width:1.8rem;
+        min-width: 250px;
+        margin-bottom: 15px;
+    }
+
+}

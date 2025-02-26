@@ -1,20 +1,28 @@
-import './App.css';
 import NavBar from './components/nav-bar';
 import Footer from './components/footer';
 import PostList from './components/post-list';
+import WritePost from './components/write-post';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import './App.scss';
 
-// 函数式组建
 function App() {
-  return(
-    // 加上data-bs-theme配置项，bootstrap会切换dark主题
-  <div className="App" data-bs-theme="dark">
-    <NavBar></NavBar>
-    <div>
-      <PostList></PostList>
-    </div>
-    <Footer></Footer>
-  </div>
-  )
+  return (
+    <Router>
+      {/*当我们加上了 data-bs-theme 配置项时，Bootstrap 就会启用 dark 主题。 var ... */}
+      <div className="App" data-bs-theme="dark">
+        <NavBar></NavBar>
+        <div className='container main-container'>
+          <Routes>
+            <Route path='/' element={<PostList></PostList>}></Route>
+            <Route path='/post-list' element={<PostList></PostList>}></Route>
+            <Route path='/write-post' element={<WritePost></WritePost>}></Route>
+          </Routes>
+        </div>
+        <Footer></Footer>
+      </div>
+    </Router>
+  );
 }
+
 
 export default App;

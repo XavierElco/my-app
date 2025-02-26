@@ -1,7 +1,31 @@
+import React, {useState} from "react"
+import "./index.scss"
+import postListMock from "../../mock-data/post-list-mock";
+
 export default props=>{
+    const [postList, setPostList] = useState([...postListMock]);
+
+
     return(
-        <div>
-            <h1>Post List</h1>
+        <div className="post-list-container">
+            {
+                postList.map(
+                    item => {
+                        return (
+                            <div className="card post-item" style={{width: "18rem"}} key={item.id}>
+                                <svg className="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                                <div className="card-body">
+                                    <h5 className="card-title">{item.postTitle}</h5>
+                                    <p className="card-text">{item.postContent}</p>
+                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        )
+                    }
+                )
+                
+            }
+            
         </div>
     )
 }

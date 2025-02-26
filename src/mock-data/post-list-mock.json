@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "postTitle":"Card title",
+        "postContent":"Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id": 2,
+        "postTitle":"Card title",
+        "postContent":"Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id":3,
+        "postTitle":"Card title",
+        "postContent":"Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id":4,
+        "postTitle":"Card title",
+        "postContent":"Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id":5,
+        "postTitle":"Card title",
+        "postContent":"Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id":6,
+        "postTitle":"Card title",
+        "postContent":"Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id":7,
+        "postTitle":"Card title",
+        "postContent":"Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id":8,
+        "postTitle":"Card title",
+        "postContent":"Some quick example text to build on the card title and make up the bulk of the card's content."
+    }
+]
