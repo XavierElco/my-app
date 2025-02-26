@@ -26,6 +26,14 @@ export default props=>{
                             写作
                         </NavLink>
                     </li>
+                    <li className="nav-item ">
+                        <NavLink 
+                            className="nav-link active" 
+                            aria-current="post list" 
+                            to="/manage">
+                            管理后台
+                        </NavLink>
+                    </li>
                 </ul>   
         
             </div>
